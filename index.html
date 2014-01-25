@@ -6,11 +6,15 @@
   <link rel="shortcut icon" href="img/favicon.ico">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-  <title>Bombe</title>
+  <script src="js/jquery.smooth-scroll.min.js"></script>
+  <title>Edward Kim</title>
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body id="home"  data-spy="scroll" data-target=".navbar-dark">
+	
+	<div id="cover"></div>
+	
 	<div class="container">
 		<nav class="navbar navbar-default navbar-fixed-top navbar-dark">
 			<div class="navbar-header">
@@ -20,16 +24,19 @@
 		      <span class="icon-bar"></span>
 		      <span class="icon-bar"></span>
 		    </button>
-		    <a class="navbar-brand" href="#">Edward Kim</a>
+		    <a class="navbar-brand" href="#home">Edward Kim</a>
 		  </div>
 		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">About</a></li>
-					<li><a href="#">Work</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#science">Science</a></li>
+					<li><a href="#coding">Coding</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
 		</nav>
+
+		<div id="about" class="spacer"></div>
 
 		<div class="row">
 			<div class="col-lg-12">
@@ -37,5 +44,120 @@
 			</div>
 		</div>
 
+		<div class="row">
+			<div class="col-lg-12">
+				<h2>Edward Kim</h2>
+				<div class="text-box">
+				<p class="text-center">
+					Scientist, entrepreneur, coder.
+				</p>
+				<hr>
+				<p>
+				 	Experienced with nanomaterials synthesis and characterization, software development, and web development. Interested in open source software and applied sciences. Passionate about science outreach.
+				</p>
+				
+				<p>
+					Currently, I'm a Co-Founder at <a target="_blank" href="http://www.getbombe.com">Bombe</a> and an Entrepreneur at <a target="_blank" href="http://thenext36.ca">The Next 36</a>. I'm also enrolled at the University of Guelph in the Bachelor of Science (Honours) program with a major in Nanoscience and a minor in Physics.
+				</p>
+
+				<p>
+					If you're interested in working with me, take a look at my <a target="_blank" href="edward_kim_resume.pdf">resume</a>.
+				</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="science"  class="spacer"></div>
+
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="img-container">
+					<img class="img-section img-circle" src="img/science.svg">
+				</div>
+				<h2>Science</h2>
+				<div class="text-box">
+				
+				<p class="text-center">
+					<strong><a target="_blank" href="http://iopscience.iop.org/1742-6596/430/1/012086">Multiple Scattering Debye-Waller Factors for Arsenate</a></strong>
+				</p>
+				<p>
+					Debye-Waller factors for the As-O-O triangular multiple scattering paths within arsenate were determined. 
+				</p>
+
+				<hr>
+
+				<p class="text-center">
+					<strong><a target="_blank" href="http://iopscience.iop.org/1742-6596/430/1/012092">XAFS Study of Arsenical Nickel Hydroxide</a></strong>
+				</p>
+				<p>
+					The role played by nickel co-ions in contributing to the stability of arsenic was investigated.
+				</p>
+
+				</div>
+			</div>
+		</div>
+
+		<div id="coding" class="spacer"></div>
+
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="img-container">
+					<img class="img-section img-circle" src="img/code.svg">
+				</div>
+				<h2>Coding</h2>
+				<div class="text-box">
+				
+				<p class="text-center">
+					<strong><a target="_blank" href="https://github.com/eddotman/atom-cluster-plot">Atomic Cluster Visualization in Amorphous Solids</a></strong>
+				</p>
+				<p class="text-center">
+					Python library for visualizing local clusters of atoms in amorphous solids.
+				</p>
+
+				<hr>
+
+				<p class="text-center">
+					<strong><a target="_blank" href="http://www.sciencefrontend.com">Science Frontend</a></strong>
+				</p>
+				<p class="text-center">
+					Python/Django web application for scientific computation.
+				</p>
+				
+				<hr>
+
+				<p class="text-center">
+					<strong><a target="_blank" href="https://github.com/eddotman/xafs-sample-prep">XAFS Sample Preparation</a></strong>
+				</p>
+				<p class="text-center">
+					C++ X-ray absorption calculator CLI program.
+				</p>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="spacer"></div>
+		<hr>
+
+		<div id="contact" class="row">
+			<div class="col-lg-12">
+				<h3>
+					Find me on:
+				</h3>
+				<p class="text-center">
+					<a target="_blank" href="http://www.twitter.com/eddotman"><img class="img-social img-circle" src="img/twitter-48.png"></a>
+					<a target="_blank" href="http://www.linkedin.com/in/eddotman"><img class="img-social img-circle" src="img/linkedin-48.png"></a>
+					<a target="_blank" href="http://www.github.com/eddotman"><img class="img-social img-circle" src="img/github-48.png"></a>
+					<a target="_blank" href="https://medium.com/@eddotman"><img class="img-social img-circle" src="img/medium.png"></a>
+				</p>
+			</div>
+		</div>
+
 	</div>
+
+	<script>
+		$(document).ready(function() {
+			$("a").smoothScroll();
+		});
+	</script>
 </body>
