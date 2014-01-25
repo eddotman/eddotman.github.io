@@ -1,0 +1,51 @@
+@primary: #ffffff;
+@secondary: #2C343B;
+@tertiary: #52616D;
+@highlight: #C44741;
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+
+body {
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 300;
+
+	background-color: @secondary;
+
+	padding-top: 5em;
+}
+
+.shadowed {
+	-moz-box-shadow: 3px 3px 4px #222;
+	-webkit-box-shadow: 3px 3px 4px #222;
+	box-shadow: 3px 3px 4px #222;
+}
+
+.navbar-dark {
+	color: @tertiary;
+	background-color: @primary;
+
+	padding:  0 2em;
+	.shadowed;
+
+	.nav>li>a {
+		color: @tertiary;
+	}
+	.nav>li>a:hover {
+		color: @highlight;
+	}
+}
+
+.img-profile {
+	display: block;
+	width: 20%;
+	border: 3px solid @tertiary;
+	margin: 0 auto;
+	-webkit-transition: border 0.5s;
+
+	.shadowed;
+}
+.img-profile:hover {
+		border: 3px solid @highlight;
+		-webkit-transition: border 0.5s;
+	}
