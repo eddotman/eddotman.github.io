@@ -4,7 +4,7 @@ body {
   font-size: 16px;
   font-weight: 300;
   height: 100%;
-  background-color: #161617;
+  background-color: #ffffff;
 }
 @media screen and (max-width: 480px) {
   body {
@@ -16,12 +16,12 @@ h2,
 h3 {
   text-align: center;
   font-weight: 100;
-  color: #ffffff;
+  color: #161617;
 }
 .shadowed {
-  -moz-box-shadow: 3px 3px 4px #000;
-  -webkit-box-shadow: 3px 3px 4px #000;
-  box-shadow: 3px 3px 4px #000;
+  -moz-box-shadow: 3px 3px 4px #555;
+  -webkit-box-shadow: 3px 3px 4px #555;
+  box-shadow: 3px 3px 4px #555;
 }
 .bordered {
   border: 1px solid #52616d;
@@ -32,9 +32,9 @@ h3 {
   color: #52616d;
   background-color: #ffffff;
   padding: 0 2em;
-  -moz-box-shadow: 3px 3px 4px #000;
-  -webkit-box-shadow: 3px 3px 4px #000;
-  box-shadow: 3px 3px 4px #000;
+  -moz-box-shadow: 3px 3px 4px #555;
+  -webkit-box-shadow: 3px 3px 4px #555;
+  box-shadow: 3px 3px 4px #555;
 }
 .navbar-dark .nav > li > a {
   color: #52616d;
@@ -49,9 +49,9 @@ h3 {
   background-image: url("../img/cover.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  -moz-box-shadow: 3px 3px 4px #000;
-  -webkit-box-shadow: 3px 3px 4px #000;
-  box-shadow: 3px 3px 4px #000;
+  -moz-box-shadow: 3px 3px 4px #555;
+  -webkit-box-shadow: 3px 3px 4px #555;
+  box-shadow: 3px 3px 4px #555;
 }
 .img-container {
   margin: 0 auto;
@@ -66,12 +66,12 @@ h3 {
 .img-profile {
   display: block;
   width: 20%;
-  border: 2px solid #52616d;
+  border: 2px solid #161617;
   margin: 0 auto;
   -webkit-transition: border 0.5s;
-  -moz-box-shadow: 3px 3px 4px #000;
-  -webkit-box-shadow: 3px 3px 4px #000;
-  box-shadow: 3px 3px 4px #000;
+  -moz-box-shadow: 3px 3px 4px #555;
+  -webkit-box-shadow: 3px 3px 4px #555;
+  box-shadow: 3px 3px 4px #555;
 }
 @media screen and (max-width: 480px) {
   .img-profile {
@@ -80,15 +80,15 @@ h3 {
 }
 .img-section {
   display: inline;
-  background-color: #52616d;
+  background-color: #161617;
   width: 20%;
-  border: 2px solid #52616d;
+  border: 2px solid #161617;
   margin: 0 2em;
   padding: 1em;
   -webkit-transition: border 0.5s;
-  -moz-box-shadow: 3px 3px 4px #000;
-  -webkit-box-shadow: 3px 3px 4px #000;
-  box-shadow: 3px 3px 4px #000;
+  -moz-box-shadow: 3px 3px 4px #555;
+  -webkit-box-shadow: 3px 3px 4px #555;
+  box-shadow: 3px 3px 4px #555;
 }
 @media screen and (max-width: 480px) {
   .img-section {
@@ -119,9 +119,6 @@ h3 {
   border: 1px solid #52616d;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  -moz-box-shadow: 3px 3px 4px #000;
-  -webkit-box-shadow: 3px 3px 4px #000;
-  box-shadow: 3px 3px 4px #000;
   margin: 4em auto;
   padding: 2em;
   width: 60%;
@@ -145,6 +142,14 @@ h3 {
 }
 .spacer {
   height: 5em;
+}
+#contact {
+  background: #161617;
+  width: 100%;
+  padding: 2em;
+}
+#contact h3 {
+  color: #ffffff;
 }
 .contact-list {
   list-style-type: none;

@@ -12,7 +12,7 @@ body {
 	font-weight: 300;
 	height: 100%;
 
-	background-color: @secondary;
+	background-color: @primary;
 
 	@media screen and (max-width : 480px) {
 		font-size: 10px;
@@ -22,13 +22,13 @@ body {
 h1, h2, h3 {
 	text-align: center;
 	font-weight: 100;
-	color: @primary;
+	color: @secondary;
 }
 
 .shadowed {
-	-moz-box-shadow: 3px 3px 4px #000;
-	-webkit-box-shadow: 3px 3px 4px #000;
-	box-shadow: 3px 3px 4px #000;
+	-moz-box-shadow: 3px 3px 4px #555;
+	-webkit-box-shadow: 3px 3px 4px #555;
+	box-shadow: 3px 3px 4px #555;
 }
 
 .bordered {
@@ -75,7 +75,7 @@ h1, h2, h3 {
 .img-profile {
 	display: block;
 	width: 20%;
-	border: 2px solid @tertiary;
+	border: 2px solid @secondary;
 	margin: 0 auto;
 	-webkit-transition: border 0.5s;
 
@@ -88,9 +88,9 @@ h1, h2, h3 {
 
 .img-section {
 	display: inline;
-	background-color: @tertiary;
+	background-color: @secondary;
 	width: 20%;
-	border: 2px solid @tertiary;
+	border: 2px solid @secondary;
 	margin: 0 2em;
 	padding: 1em;
 	-webkit-transition: border 0.5s;
@@ -128,7 +128,7 @@ h1, h2, h3 {
 
 .text-box {
 	.bordered;
-	.shadowed;
+	//.shadowed;
 	margin: 4em auto;
 	padding: 2em;
 	width: 60%;
@@ -154,6 +154,16 @@ h1, h2, h3 {
 
 .spacer {
 	height: 5em;
+}
+
+#contact {
+	background: @secondary;
+	width: 100%;
+	padding: 2em;
+
+	h3 {
+		color: @primary;
+	}
 }
 
 .contact-list {
