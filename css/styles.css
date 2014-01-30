@@ -19,9 +19,9 @@ h3 {
   color: #161617;
 }
 .shadowed {
-  -moz-box-shadow: 3px 3px 4px #555;
-  -webkit-box-shadow: 3px 3px 4px #555;
-  box-shadow: 3px 3px 4px #555;
+  -moz-box-shadow: 0px 3px 4px #555;
+  -webkit-box-shadow: 0px 3px 4px #555;
+  box-shadow: 0px 3px 4px #555;
 }
 .bordered {
   border: 1px solid #52616d;
@@ -32,9 +32,9 @@ h3 {
   color: #52616d;
   background-color: #ffffff;
   padding: 0 2em;
-  -moz-box-shadow: 3px 3px 4px #555;
-  -webkit-box-shadow: 3px 3px 4px #555;
-  box-shadow: 3px 3px 4px #555;
+  -moz-box-shadow: 0px 3px 4px #555;
+  -webkit-box-shadow: 0px 3px 4px #555;
+  box-shadow: 0px 3px 4px #555;
 }
 .navbar-dark .nav > li > a {
   color: #52616d;
@@ -49,9 +49,9 @@ h3 {
   background-image: url("../img/cover.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  -moz-box-shadow: 3px 3px 4px #555;
-  -webkit-box-shadow: 3px 3px 4px #555;
-  box-shadow: 3px 3px 4px #555;
+  -moz-box-shadow: 0px 3px 4px #555;
+  -webkit-box-shadow: 0px 3px 4px #555;
+  box-shadow: 0px 3px 4px #555;
 }
 .img-container {
   margin: 0 auto;
@@ -69,9 +69,9 @@ h3 {
   border: 2px solid #161617;
   margin: 0 auto;
   -webkit-transition: border 0.5s;
-  -moz-box-shadow: 3px 3px 4px #555;
-  -webkit-box-shadow: 3px 3px 4px #555;
-  box-shadow: 3px 3px 4px #555;
+  -moz-box-shadow: 0px 3px 4px #555;
+  -webkit-box-shadow: 0px 3px 4px #555;
+  box-shadow: 0px 3px 4px #555;
 }
 @media screen and (max-width: 480px) {
   .img-profile {
@@ -86,9 +86,9 @@ h3 {
   margin: 0 2em;
   padding: 1em;
   -webkit-transition: border 0.5s;
-  -moz-box-shadow: 3px 3px 4px #555;
-  -webkit-box-shadow: 3px 3px 4px #555;
-  box-shadow: 3px 3px 4px #555;
+  -moz-box-shadow: 0px 3px 4px #555;
+  -webkit-box-shadow: 0px 3px 4px #555;
+  box-shadow: 0px 3px 4px #555;
 }
 @media screen and (max-width: 480px) {
   .img-section {
