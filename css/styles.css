@@ -31,6 +31,9 @@ li {
 hr {
   border-bottom: 2px #c44741 solid;
 }
+ul {
+  list-style-type: circle;
+}
 .shadowed {
   -moz-box-shadow: 0px 1px 4px #555;
   -webkit-box-shadow: 0px 1px 4px #555;
