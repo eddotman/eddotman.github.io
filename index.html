@@ -11,11 +11,11 @@
 </head>
 <body>
 
-	 <nav>
+	 <nav class="green darken-3">
 		<div class="container">
 	    <div class="nav-wrapper">
 				<a href="#home" class="brand-logo">Edward Kim</a>
-	      <ul id="nav-mobile" class="right side-nav">
+	      <ul id="nav-mobile" class="right hide-on-med-and-down">
 						<li><a href="#about">About</a></li>
 						<li><a href="#science">Science</a></li>
 						<li><a href="#coding">Coding</a></li>
@@ -30,8 +30,6 @@
 	<div class="container">
 		<img class="img-profile img-circle" src="img/me.jpg">
 
-
-		<div id="about"  class="spacer"></div>
 
 		<div class="row">
 			<h1>Edward Kim</h1>
@@ -60,7 +58,6 @@
 				<strong><a target="_blank" href="http://ma.ecsdl.org/content/MA2014-01/8/515.abstract">Fabrication and Characterization of Thin-Film Nickel Hydroxide Electrodes for Micro-Power Applications</a></strong>
 			</p>
 			<p>H Falahati et al 2014 ECS Meeting Abstracts MA2014-01</p>
-			<br>
 			<blockquote>
 			Micro power sources are very attractive for nano- and micro-scale devices, such as Point-of-Care medical diagnostics and Micro Electro Mechanical Systems, where only low power densities and capacities are required. In the present work, we report on the micro-fabrication of patterned α-Ni(OH)2 films which are suitable for rechargeable nickel metal hydride (Ni-MH) and nickel-zinc (Ni-Zn) micro-batteries as well as for micro-capacitors. The main objective of the current research is to investigate the influence of three-dimensional (3D) patterned structures on the mechanical stability as well as on the electrochemical performance of the electrode.
 			</blockquote>
@@ -69,7 +66,6 @@
 				<strong><a target="_blank" href="http://iopscience.iop.org/1742-6596/430/1/012086">Multiple Scattering Debye-Waller Factors for Arsenate</a></strong>
 			</p>
 			<p>E Kim et al 2013 J. Phys.: Conf. Ser. 430 012086 doi:10.1088/1742-6596/430/1/012086</p>
-			<br>
 			<blockquote>
 			Debye-Waller factors for the As-O-O triangular multiple scattering paths within the arsenate in Na2HAsO4.7H2O are evaluated in terms of magnitude ratio with respect to the Debye-Waller factor of the nearest neighbour As-O shell. The arsenates are studied under two different levels of distortion from an ideal tetrahedron, i.e. a relatively high distortion in the powder form and a nearly ideal tetrahedron in an aqueous solution at pH 14. The Debye-Waller factor ratio is found to be 2.0 and 1.9 for the powder and liquid sample, respectively, appearing to be insensitive to the distortion of the arsenate tetrahedron.
 			</blockquote>
@@ -78,7 +74,6 @@
 				<strong><a target="_blank" href="http://iopscience.iop.org/1742-6596/430/1/012092">XAFS Study of Arsenical Nickel Hydroxide</a></strong>
 			</p>
 			<p>N Chen et al 2013 J. Phys.: Conf. Ser. 430 012092 doi:10.1088/1742-6596/430/1/012092</p>
-			<br>
 			<blockquote>
 				To investigate the role played by nickel co-ions in contributing to the stability of arsenic, fluorescence XAFS measurements at both arsenic K-edge and nickel K-edge, respectively, on amorphous arsenical nickel hydroxide, crystalline arsenical nickel hydroxide, and annabergite reference compounds have been carried out. The XAFS results indicate that the arsenic-bearing nickel hydroxides have a well-defined arsenic local structure with multiple coordination shells, suggesting a compound formation mechanism instead of surface adsorption. The degradation of the arsenic local structure in the crystalline arsenical nickel hydroxide is observed. The XAFS of annabergites are compared to that of the arsenical nickel hydroxide and possible structural models are discussed.
 			</blockquote>
@@ -92,42 +87,54 @@
 			<h2>CODING</h2>
 			<hr>
 			<br>
-			<div class="col s12 m12">
-	    	<div class="card grey">
-	    		<div class="card-content">
-	    			<h1>Atomic Visualization in Amorphous Solids</h1>
-	    		</div>
-	    		<div class="card-footer">
-						<br>
-						<p>This code package was written for an undergraduate thesis project at the University of Guelph. It's a Python library for visualizing clusters of atoms in amorphous solids. 3D plotting tools are used to visualize the average local atomic structure in non crystalline solids (e.g. silicon).</p>
-	    			<p> &gt; Download the source code on <a class="card-action" href="http://eddotman.github.io/atom-cluster-plot/">Github</a>.</p>
-						<br>
-	    		</div>
-	    	</div>
-    	</div>
-			<div class="col s12 m12">
-	    	<div class="card grey">
-	    		<div class="card-content">
-	    			<h1>Science Frontend</h1>
-	    		</div>
-	    		<div class="card-footer">
-						<br>
-						<p>Science Frontend is a web application written mainly in Python/Django. Scientific computations are run on the server-side, with the results displayed in the client. Currently, the main use case supported is for x-ray sample preparation (i.e. x-ray absorption cross section calculation based on chemical formulae).</p>
-	    			<p> &gt; Download the source code on <a class="card-action" href="https://github.com/eddotman/science-frontend">Github</a>.</p>
-						<br>
-	    		</div>
-	    	</div>
-	  	</div>
-			<div class="col s12 m12">
-				<div class="card grey">
-					<div class="card-content">
-						<h1>Attobyte</h1>
+			<div class="row">
+				<div class="col s12 m6">
+					<div class="card">
+						<div class="card-content">
+							<h5>Visualization in Amorphous Solids</h5>
+							<p>This code package was written for an undergraduate thesis project at the University of Guelph. It's a Python library for visualizing clusters of atoms in amorphous solids. 3D plotting tools are used to visualize the average local atomic structure in non crystalline solids (e.g. silicon).</p>
+						</div>
+						<div class="card-action">
+							<a href="http://eddotman.github.io/atom-cluster-plot/">Github</a>
+						</div>
 					</div>
-					<div class="card-footer">
-						<br>
-						<p>Attobyte is a just-for-fun educational webapp written on the MEAN (Mongo, Express, Angular, Node) framework. Attobyte consists of short interactive text-based 'storybooks' which teach both scientific and programming concepts side by side. The level of content is quite introductory and appropriate for beginners.</p>
-						<p> &gt; Download the source code on <a class="card-action" href="https://github.com/eddotman/attobyte">Github</a>.</p>
-						<br>
+				</div>
+				<div class="col s12 m6">
+					<div class="card">
+						<div class="card-content">
+							<h5>Science Frontend</h5>
+							<p>Science Frontend is a web application written mainly in Python/Django. Scientific computations are run on the server-side, with the results displayed in the client. Currently, the main use case supported is for x-ray sample preparation (i.e. x-ray absorption cross section calculation based on chemical formulae).</p>
+						</div>
+						<div class="card-action">
+							<a href="https://github.com/eddotman/science-frontend">Github</a>
+							<a href="http://www.sciencefrontend.com">Demo</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s12 m6">
+					<div class="card">
+						<div class="card-content">
+							<h5>Attobyte</h5>
+							<p>Attobyte is a just-for-fun educational webapp written on the MEAN (Mongo, Express, Angular, Node) framework. Attobyte consists of short interactive text-based 'storybooks' which teach both scientific and programming concepts side by side. The level of content is quite introductory and appropriate for beginners.</p>
+						</div>
+						<div class="card-action">
+							<a href="https://github.com/eddotman/attobyte">Github</a>
+							<a href="http://attobyte.herokuapp.com">Demo</a>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m6">
+					<div class="card">
+						<div class="card-content">
+							<h5>Article Downloader</h5>
+							<p>This module uses publisher APIs (and sometime direct download) to programmatically retrieve large amounts of scientific journal articles for text mining. Primarily built for Elsevier's text mining API; support for other APIs is gradually being added.</p>
+						</div>
+						<div class="card-action">
+							<a href="https://github.com/eddotman/article-downloader">Github</a>
+							<a href="https://pypi.python.org/pypi/articledownloader">PYPI</a>
+						</div>
 					</div>
 				</div>
 			</div>
