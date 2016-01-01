@@ -10,7 +10,9 @@ body {
 }
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
   text-align: center;
   font-weight: 100;
   color: #161617;
@@ -50,11 +52,14 @@ nav {
 }
 
 #page1 {
-  background: #A31E34;
+  background-color: #A31E34;
+  background-image: url('../img/cover.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 92vh;
   width: 100vw;
 }
-#page1 h1, #page1 h3 {
+#page1 h1, #page1 h5 {
   color: #fff;
 }
 
@@ -76,7 +81,7 @@ nav {
 }
 
 .spacer{
-  height: 3em;
+  height: 4em;
 }
 
 .card-content {
