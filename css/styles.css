@@ -42,6 +42,9 @@ nav {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
+.justified {
+  text-align: justify !important;
+}
 
 .img-circle {
 	width: 200px;
