@@ -84,7 +84,7 @@ nav {
 }
 
 .big-img {
-  width: 80%;
+  width: 100%;
   margin: 3.5em auto;
   display: block;
 }
@@ -112,8 +112,4 @@ nav {
 .footcontent p {
   margin: 0;
   padding: 0;
-}
-
-a {
-  text-decoration: underline;
 }
