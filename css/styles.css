@@ -1,6 +1,9 @@
 body {
   height: 100%;
+  width: 100%;
   background-color: #fff;
+  margin: 0;
+  padding: 0;
 }
 @media screen and (max-width: 480px) {
   body, html {
@@ -30,7 +33,7 @@ ul {
   list-style-type: circle;
 }
 nav {
-  font-weight: 100;
+  font-weight: 300;
 }
 .shadowed {
   -moz-box-shadow: 0px 1px 4px #555;
@@ -59,8 +62,11 @@ nav {
   background-image: url('../img/cover.svg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 92vh;
+  height: 95vh;
   width: 100vw;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 #page1 h1, #page1 h5 {
   color: #fff;
@@ -70,6 +76,8 @@ nav {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  margin:0;
+  padding:0;
 }
 
 .img-profile {
