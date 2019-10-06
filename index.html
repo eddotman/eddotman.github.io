@@ -1,151 +1,182 @@
-<!doctype html>
-<html id="home">
-<head>
-	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no">
-  <link rel="shortcut icon" href="img/favicon.ico">
-  <title>Edward Kim</title>
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-<span id="top"></span>
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edward Kim</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="https://avatars3.githubusercontent.com/u/1232389?v=4" type="image/png"></head>
 
-	<div class="navbar-fixed">
-		<nav class="grey darken-4">
-			<div class="nav-wrapper">
-		    <div class="container">
-					<!-- <a href="#top" class="brand-logo">Edward Kim</a> -->
-					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-					<ul class="right hide-on-med-and-down">
-							<li><a href="#top">Home</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#projects">Projects</a></li>
-							<li><a href="#contact">Misc.</a></li>
-					</ul>
-					<ul id="mobile-demo" class="side-nav">
-							<li><a href="#top">Home</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#projects">Projects</a></li>
-							<li><a href="#contact">Misc.</a></li>
-		      </ul>
-		    </div>
-			</div>
-		</nav>
-	</div>
+  <body>
+    <div id="loading">
+      <div id="spinner"></div>
+    </div>
+    <div id="profile">
+      <div id="profile_img" style="background: url(https://avatars3.githubusercontent.com/u/1232389?v=4) center;"></div>
+      <div id="username"><span style="display:block;">Edward Kim</span><a href="https://github.com/eddotman">@eddotman</a></div>
+      <div id="userbio" style="display: none;">undefined</div>
+      <div id="about">
+                <span style="display:block;"><i class="fas fa-users"></i> &nbsp; Citrine Informatics</span>
+                <span style="display:none;"><i class="fas fa-envelope"></i> &nbsp; null</span>
+                <span style="display:block;"><i class="fas fa-link"></i> &nbsp; <a href="http://eddotman.github.io">http://eddotman.github.io</a></span>
+                <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Medicine Hat, Canada</span>
+                <span style="display:block;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Data Scientist</span>
+                <div class="socials">
+                <br>
+                <a href="https://www.twitter.com/eddotman" target="_blank" class="socials"><i class="fab fa-twitter"></i></a> //
+                <a href="https://www.linkedin.com/in/eddotman/" target="_blank" class="socials"><i class="fab fa-linkedin-in"></i></a>
+                <span style="display:none !important;"><a href="https://www.dribbble.com/undefined" target="_blank" class="socials"><i class="fab fa-dribbble"></i></a></span>
+                <span style="display:none !important;"><a href="https://www.medium.com/@undefined/" target="_blank" class="socials"><i class="fab fa-medium-m"></i></a></span>
+                </div>
+                </div>
+    </div>
+    <div id="display">
+      <div>
+          <h1>About me 👋</h1>
+          <p>
+                Currently, I'm a researcher in <strong>materials informatics</strong>, with a focus in <strong>applied machine learning</strong>. I am a strong believer in open science and a supporter of science outreach efforts.
+           </p>
+           <p>
+               I received my BSc in Nanoscience from the <strong>University of Guelph</strong>, and I received my PhD in Materials Science from <strong>MIT</strong>.
+               Currently, I'm a data scientist at <strong>Citrine Informatics</strong>, where I work on a variety of materials development efforts and AI research projects.
+           </p>
+           <p>
+                I enjoy cooking, martial arts (Taekwondo), listening to and playing music, reading sci-fi/fantasy novels, and playing video games. I also love dogs and exploring the outdoors.
+           </p>
+      </div>
+      <div id="work">
+        <h1>Open source projects</h1>
+        <div class="projects" id="work_section">
+                        <a href="https://github.com/olivettigroup/article-downloader" target="_blank">
+                        <section>
+                            <div class="section_title">article-downloader</div>
+                            <div class="about_section">
+                            <span style="display:block;">Uses publisher APIs to programmatically retrieve scientific journal articles for text mining.</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 28</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 16</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/olivettigroup/materials-word-embeddings" target="_blank">
+                            <section>
+                                <div class="section_title">materials-word-embeddings</div>
+                                <div class="about_section">
+                                <span style="display:block;">Word2Vec model trained across 640k+ materials science journal articles</span>
+                                </div>
+                                <div class="bottom_section">
+                                    <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                                    <span><i class="fas fa-star"></i>&nbsp; 23</span>
+                                    <span><i class="fas fa-code-branch"></i>&nbsp; 8</span>
+                                </div>
+                            </section>
+                            </a>
+                        <a href="https://github.com/olivettigroup/materials-synthesis-generative-models" target="_blank">
+                        <section>
+                            <div class="section_title">materials-synthesis-generative-models</div>
+                            <div class="about_section">
+                            <span style="display:block;">Public release of data and code for materials synthesis generation</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 7</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 4</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/eddotman/intro-to-materials-informatics" target="_blank">
+                        <section>
+                            <div class="section_title">intro-to-materials-informatics</div>
+                            <div class="about_section">
+                            <span style="display:block;">Educational materials (slides, outlines, drafts, code) for single-lecture introduction to materials informatics</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 2</span>
+                            </div>
+                        </section>
+                        </a></div>
+      </div>
+      <div id="forks" style="display:none;">
+        <h1>Forks.</h1>
+        <div class="projects" id="forks_section"></div>
+      </div>
+      <div id="blog_section">
+        <h1>Blog.</h1>
+        <div id="blogs"></div>
+      </div>
+      <div id="footer">
+        <a href="https://github.com/imfunniee" target="_blank">made on earth by a human</a>
+      </div>
+    </div>
+    <script type="text/javascript">
+      setTimeout(function() {
+        document.getElementById("loading").classList.add("animated");
+        document.getElementById("loading").classList.add("fadeOut");
+        setTimeout(function() {
+          document.getElementById("loading").classList.remove("animated");
+          document.getElementById("loading").classList.remove("fadeOut");
+          document.getElementById("loading").style.display = "none";
+        }, 800);
+      }, 1500);
+      $.getJSON("blog.json", function(blog) {
+        blog = blog || [];
+        if (blog.length == 0) {
+          return (document.getElementById("blog_section").style.display =
+            "none");
+        }
+        for (var i = 0; i < blog.length; i++) {
+          $("#blogs").append(`
+            <a href="./blog/${blog[i].url_title}/" target="_blank">
+                <section>
+                    <img src="./blog/${blog[i].url_title}/${blog[i].top_image}">
+                    <div class="blog_container">
+                        <div class="section_title">${blog[i].title}</div>
+                        <div class="about_section">
+                            ${blog[i].sub_title}
+                        </div>
+                    </div>
+                </section>
+            </a>
+            `);
+        }
+      }).fail(function() {
+        return (document.getElementById("blog_section").style.display = "none");
+      });
+    </script>
 
-	<div id="page1" >
-		<div id="p1content">
-			<img class="img-profile img-circle" src="img/me.jpg">
-			<h1>Edward Kim</h1>
-			<h5>Materials informatics researcher</h5>
-		</div>
-	</div>
+    <script>
+      const magicProjectsGrid = new MagicGrid({
+        container: "#work_section",
+        animate: false,
+        gutter: 30, // default gutter size
+        static: true,
+        useMin: false,
+        maxColumns: 1,
+        useTransform: true
+      });
 
-	<div class="container">
-		<span id="about"></span>
+      const magicForksGrid = new MagicGrid({
+        container: "#forks_section",
+        animate: false,
+        gutter: 30, // default gutter size
+        static: true,
+        useMin: false,
+        maxColumns: 1,
+        useTransform: true
+      });
 
-		<div class="row">
-			<div class="spacer"></div>
-			<h2>ABOUT ME</h2>
-			<hr>
-			<br>
+      $("document").ready(() => {
+        magicProjectsGrid.listen();
+        magicForksGrid.listen();
+      });
+    </script>
+  
 
-			<p class='flow-text justified'>
-			 	I'm a researcher in <strong>materials informatics</strong>, with a focus in <strong>applied machine learning</strong>. Also, I am a strong believer in open science and a supporter of science outreach efforts.
-			</p>
-			<p class="flow-text justified">
-				I enjoy cooking, martial arts (Taekwondo), listening to and playing music, reading sci-fi/fantasy novels, and playing video games. I also love dogs and exploring the outdoors.
-				I received my BSc in Nanoscience from the <a target="_blank" href="http://www.uoguelph.ca">University of Guelph</a>, and I received my PhD in Materials Science from <a target="_blank" href="http://www.mit.edu">MIT</a>, where I worked in the <a target="_blank" href="http://olivetti.mit.edu/">Olivetti Group</a>, as a part of the <a target="_blank" href="https://www.synthesisproject.org">Synthesis Project</a>.
-				Currently, I'm a data scientist at <a target="_blank" href="https://citrine.io/">Citrine Informatics</a>, where I work on a variety of materials development efforts and AI research projects.
-			</p>
-
-		</div>
-
-
-
-		<div id="projects"  class="spacer"></div>
-		<div id="row">
-			<h2>PROJECTS</h2>
-			<hr>
-			<br>
-
-			<p class='flow-text justified'>
-				Most of my time is spent working on various materials informatics research projects. These projects include industrial R&D for novel materials development, as well as research into new AI algorithms for materials discovery. 
-			</p>
-
-			<p class='flow-text justified'>
-				My PhD thesis was titled "Data-Mining Natural Language Materials Syntheses," and included research on learned data representations, physically-meaningful and interpretable model predictions, robustly evaluating generative models, and adapting NLP algorithms to domain-specific text.
-			</p>
-
-			<a target="_blank" href="https://www.synthesisproject.org/"><img class='big-img' src="img/tio2.png"></a>
-
-			<p class='flow-text justified'>
-				Over the past several years, I've worked on a variety of projects spanning the fields of <a target="_blank" href="http://iopscience.iop.org/1742-6596/430/1/012086">experimental</a> <a target="_blank" href="http://iopscience.iop.org/1742-6596/430/1/012092">physics</a>, <a target="_blank" href="http://journals.aps.org/prb/abstract/10.1103/PhysRevB.92.064204">computational materials science</a>, <a target="_blank" href="https://www.nature.com/articles/sdata2017127">materials informatics</a>, <a target="_blank" href="https://github.com/olivettigroup/article-downloader">Python modules</a>, machine learning consulting, and <a target="_blank" href="http://pubs.acs.org/doi/abs/10.1021/acsami.5b01962">battery electrode design</a>. 
-			</p>
-
-			<a target="_blank" href="http://journals.aps.org/prb/abstract/10.1103/PhysRevB.92.064204"><img class='big-img' src="img/LAM_www_iso.png"></a>
-
-			<p class='flow-text justified'>
-				Many of the projects I've worked on have included some amount of code, and most of this is available on my <a  target="_blank" href="https://github.com/eddotman/">Github</a> page. You can find a more general overview of my professional history on <a  target="_blank" href="https://linkedin.com/in/eddotman/">LinkedIn</a>.
-			</p>
-
-		</div>
-		<br><br>
-		<br><br>
-
-		<div id="contact"  class="spacer"></div>
-
-		<div class="row">
-			<h2>INTERESTS AND HOBBIES</h2>
-			<hr>
-			<br>
-
-			<div class="col offset-s1 s10 flow-text justified">
-				<span class="waves-effect waves-light btn-large grey darken-2">books</span>
-				<span class="waves-effect waves-light btn-large grey darken-2">games</span>
-				<span class="waves-effect waves-light btn-large grey darken-2">dogs</span>
-				<span class="waves-effect waves-light btn-large grey darken-2">outdoors</span>
-				<span class="waves-effect waves-light btn-large grey darken-2">decor</span>
-				<span class="waves-effect waves-light btn-large grey darken-2">shoes</span>
-				<span class="waves-effect waves-light btn-large grey darken-2">sushi</span>
-				<span class="waves-effect waves-light btn-large grey darken-2">pizza</span>
-				<span class="waves-effect waves-light btn-large grey darken-2">coffee</span>
-				<span class="waves-effect waves-light btn-large grey darken-2">bagels</span>
-			</div>
-	</div>
-	<br>
-	</div>
-
-	<footer class="page-footer black">
-			<div class="container center foot">
-				<div class="footcontent">
-					<strong>Let's chat on <a target="_blank" href="http://www.twitter.com/eddotman">Twitter</a> or <a target="_blank" href="http://www.linkedin.com/in/eddotman">LinkedIn</a>.</strong>
-				</div>
-			</div>
-	</footer>
-
-
-	<!--Import jQuery before materialize.js-->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-	<script src="js/jquery.smooth-scroll.min.js"></script>
-
-	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-33851268-3', 'auto');
-  ga('send', 'pageview');
-
-	$(document).ready(function(){
-		$('.button-collapse').sideNav({menuWidth: 240, activationWidth: 70});
-		$('a').smoothScroll();
-	})
-
-	</script>
-</body>
-</html>
+</body></html>
