@@ -175,10 +175,10 @@ body {
   color: var(--bg-color) !important;
 }
 
-#blog img {
+.img {
   width: 100%;
   margin: 2vh 0px;
-  border-radius: 5px;
+  border-radius: 8px;
   border: 1px solid rgb(0, 0, 0, 0.08);
 }
 
