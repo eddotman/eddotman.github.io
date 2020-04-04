@@ -47,6 +47,36 @@
                 I enjoy cooking, martial arts (Taekwondo), listening to and playing music, reading sci-fi/fantasy novels, and playing video games. I also love dogs and exploring the outdoors.
            </p>
       </div>
+      <div id="blog_section">
+        <h1>Highlighted Work 🧰</h1>
+        <div id="blogs">
+          <section>
+            <img src="img/project2.png">
+            <div class="blog_container">
+                <div class="section_title">Variational Autoencoders for Accelerated Materials Synthesis Planning <a target="_blank" href="https://pubs.acs.org/doi/10.1021/acs.jcim.9b00995">🔗</a> </div>
+                <div class="about_section">
+                    <p>As the lead author on this peer-reviewed journal article, I show how deep generative models leverage historical data and inform synthesis methods for novel materials.</p>
+
+                    <p>Conditional Variational Autoencoders were combined with NLP techniques 
+                    (word embeddings from language models & sequence labelling models for named entity recognition) to 
+                    learn a generalized model for inorganic materials syntheses. Querying and inspection of the model revealed the successful 
+                    capture of existing domain knowledge, and the potential to generate synthesis recommendations for novel materials.</p>
+                </div>
+            </div>
+          </section>
+          <section>
+            <img src="img/project1.png">
+            <div class="blog_container">
+                <div class="section_title">Policy and Reporting Recommendations for Materials Synthesis Methods <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S2590238519300360">🔗</a></div>
+                <div class="about_section">
+                    <p>As the lead author on this article in the inaugural issue of the journal <em>Matter</em> (by <em>Cell Press</em>) I outline the current challenges and opportunities in reporting and writing standards for materials synthesis methods in the academic community.</p> 
+                    
+                    <p>The relationship between human-centric writing and readiness for AI-driven methodology is highlighted as a motivating example.</p>  
+                </div>
+            </div>
+          </section>
+        </div>
+      </div>
       <div id="footer">
         <!-- <a href="https://github.com/imfunniee" target="_blank">made on earth by a human</a> -->
       </div>
@@ -61,30 +91,6 @@
           document.getElementById("loading").style.display = "none";
         }, 800);
       }, 1500);
-      $.getJSON("blog.json", function(blog) {
-        blog = blog || [];
-        if (blog.length == 0) {
-          return (document.getElementById("blog_section").style.display =
-            "none");
-        }
-        for (var i = 0; i < blog.length; i++) {
-          $("#blogs").append(`
-            <a href="./blog/${blog[i].url_title}/" target="_blank">
-                <section>
-                    <img src="./blog/${blog[i].url_title}/${blog[i].top_image}">
-                    <div class="blog_container">
-                        <div class="section_title">${blog[i].title}</div>
-                        <div class="about_section">
-                            ${blog[i].sub_title}
-                        </div>
-                    </div>
-                </section>
-            </a>
-            `);
-        }
-      }).fail(function() {
-        return (document.getElementById("blog_section").style.display = "none");
-      });
     </script>
 
     <script>
