@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,700");
 @import url("https://fonts.googleapis.com/css?family=Questrial");
 
 body {
@@ -11,6 +11,11 @@ body {
   overflow-x: hidden;
   align-items: center;
   font-family: "Poppins", sans-serif;
+  font-weight:300;
+}
+
+strong {
+  font-weight: 700;
 }
 
 #loading {
