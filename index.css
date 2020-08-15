@@ -198,7 +198,7 @@ strong {
   color: var(--text-color);
   text-decoration: none;
   margin-left: 4vw;
-  font-weight: bold;
+  font-weight: 300;
 }
 
 #footer_blog {
@@ -211,7 +211,7 @@ strong {
   color: var(--text-color) !important;
   text-decoration: none;
   font-family: "Questrial", sans-serif;
-  font-weight: bold;
+  font-weight: 300;
 }
 
 #footer {
@@ -240,13 +240,13 @@ strong {
 }
 
 #profile div {
-  font-weight: bold;
+  font-weight: 300;
   margin: 1.5vh 0px;
 }
 
 #username {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 300;
 }
 
 #username span {
@@ -268,7 +268,7 @@ strong {
 #username a {
   color: #fff !important;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 300;
 }
 
 #about a:hover,
