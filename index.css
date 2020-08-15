@@ -80,7 +80,7 @@ strong {
 #display h1 {
   font-size: 50px;
   color: var(--text-color);
-  font-weight: bold;
+  font-weight: 300;
   font-family: "Questrial", sans-serif;
 }
 
@@ -101,7 +101,7 @@ strong {
   font-size: 18px;
   color: var(--text-color);
   font-family: "Poppins", sans-serif;
-  font-weight: bold;
+  font-weight: 300;
 }
 
 #username_blog span {
@@ -154,7 +154,7 @@ strong {
 #blog-display h1 {
   font-size: 50px;
   color: var(--text-color);
-  font-weight: bold;
+  font-weight: 300;
   font-family: "Questrial", sans-serif;
 }
 
@@ -164,7 +164,7 @@ strong {
 
 #blog-display {
   padding: 1vh 0px;
-  font-family: "Questrial", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 #blog p {
@@ -255,13 +255,13 @@ strong {
 
 #userbio {
   font-size: 26px;
-  font-family: "Questrial", sans-serif;
+  font-family: "Poppins", sans-serif;
   width: 100%;
 }
 
 #about {
   font-size: 18px;
-  font-family: "Questrial", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 #about a,
@@ -342,7 +342,7 @@ strong {
 
 .about_section {
   font-size: 18px;
-  font-family: "Questrial", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 2vh 0px;
   font-weight: normal;
   word-wrap: break-word;
