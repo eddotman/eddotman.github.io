@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins");
-@import url("https://fonts.googleapis.com/css?family=Questrial");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,600");
+@import url("https://fonts.googleapis.com/css?family=Questrial:300,600");
 
 body {
   margin: 0%;
@@ -11,6 +11,11 @@ body {
   overflow-x: hidden;
   align-items: center;
   font-family: "Poppins", sans-serif;
+  font-weight:300;
+}
+
+strong {
+  font-weight: 600;
 }
 
 #loading {
@@ -75,7 +80,7 @@ body {
 #display h1 {
   font-size: 50px;
   color: var(--text-color);
-  font-weight: bold;
+  font-weight: 300;
   font-family: "Questrial", sans-serif;
 }
 
@@ -96,7 +101,7 @@ body {
   font-size: 18px;
   color: var(--text-color);
   font-family: "Poppins", sans-serif;
-  font-weight: bold;
+  font-weight: 300;
 }
 
 #username_blog span {
@@ -149,7 +154,7 @@ body {
 #blog-display h1 {
   font-size: 50px;
   color: var(--text-color);
-  font-weight: bold;
+  font-weight: 300;
   font-family: "Questrial", sans-serif;
 }
 
@@ -159,7 +164,7 @@ body {
 
 #blog-display {
   padding: 1vh 0px;
-  font-family: "Questrial", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 #blog p {
@@ -193,7 +198,7 @@ body {
   color: var(--text-color);
   text-decoration: none;
   margin-left: 4vw;
-  font-weight: bold;
+  font-weight: 300;
 }
 
 #footer_blog {
@@ -206,7 +211,7 @@ body {
   color: var(--text-color) !important;
   text-decoration: none;
   font-family: "Questrial", sans-serif;
-  font-weight: bold;
+  font-weight: 300;
 }
 
 #footer {
@@ -235,13 +240,13 @@ body {
 }
 
 #profile div {
-  font-weight: bold;
+  font-weight: 300;
   margin: 1.5vh 0px;
 }
 
 #username {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 300;
 }
 
 #username span {
@@ -250,20 +255,20 @@ body {
 
 #userbio {
   font-size: 26px;
-  font-family: "Questrial", sans-serif;
+  font-family: "Poppins", sans-serif;
   width: 100%;
 }
 
 #about {
   font-size: 18px;
-  font-family: "Questrial", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 #about a,
 #username a {
   color: #fff !important;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 300;
 }
 
 #about a:hover,
@@ -337,7 +342,7 @@ body {
 
 .about_section {
   font-size: 18px;
-  font-family: "Questrial", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 2vh 0px;
   font-weight: normal;
   word-wrap: break-word;

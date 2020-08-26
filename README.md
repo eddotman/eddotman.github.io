@@ -1,1 +1,1 @@
-Eddie's personal website
+Personal website
