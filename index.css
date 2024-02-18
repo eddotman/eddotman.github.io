@@ -560,9 +560,9 @@ strong {
   --blog-gray-color: rgb(80, 80, 80);
   --background-image: linear-gradient(
       90deg,
-      rgba(10, 10, 10, 0.2),
-      rgb(10, 10, 10, 0.2)
+      rgba(10, 10, 10, 0.3),
+      rgb(10, 10, 10, 0.3)
     ),
-    url("https://images.unsplash.com/photo-1496247749665-49cf5b1022e9");
+    url("https://images.unsplash.com/photo-1513553404607-988bf2703777");
   --background-background: #fff;
 }
